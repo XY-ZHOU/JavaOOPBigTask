@@ -18,5 +18,13 @@ public class Main {
         String[] klassesTwo={};
         Teacher teacherTwo=new Teacher(12,"Tom",21,klassesTwo);
 
+        System.out.println(person.introduce());
+        System.out.println(studentOne.introduce());
+        System.out.println(studentOne.introduce());
+        System.out.println(studentOne.klass.appendMember(studentThree));
+        System.out.println(""+teacherOne.introduce());
+        System.out.println(""+teacherTwo.introduce());
+        System.out.println(teacherOne.isTeaching(studentOne));
+        System.out.println(teacherOne.isTeaching(studentTwo));
     }
 }
