@@ -11,7 +11,14 @@ public class Klass {
     public void assignLeader(Student student){
         this.leader = student.name;
     }
-
+    public String appendMember(Student student){
+        assignLeader(student);
+        if((student.klass.number).equals(number)){
+            return "";
+        }else{
+            return ("It is not one of us.");
+        }
+    }
 
 
 }
