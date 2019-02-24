@@ -8,6 +8,9 @@ public class Klass {
     public Klass(String number){
         this.number=number;
     }
+    public void assignLeader(Student student){
+        this.leader = student.name;
+    }
 
 
 
