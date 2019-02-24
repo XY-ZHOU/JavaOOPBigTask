@@ -10,5 +10,8 @@ public class Teacher extends Person {
         this.klasses = klasses;
 
     }
-
+    public String introduce() {
+        String str = String.join(",", klasses);
+        return str.length() == 0 ? super.introduce() + " I am a Teacher. I teach No Class." : super.introduce() + " I am a Teacher. I teach Class " + str + ".";
+    }
 }
