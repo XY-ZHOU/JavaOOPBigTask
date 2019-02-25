@@ -21,7 +21,7 @@ public class Main {
         System.out.println(person.introduce());
         System.out.println(studentOne.introduce());
         System.out.println(studentOne.introduce());
-        System.out.println(studentOne.klass.appendMember(studentThree));
+        studentOne.klass.appendMember(studentThree);
         System.out.println(""+teacherOne.introduce());
         System.out.println(""+teacherTwo.introduce());
         System.out.println(teacherOne.isTeaching(studentOne));
