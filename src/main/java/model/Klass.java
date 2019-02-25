@@ -11,19 +11,20 @@ public class Klass {
     }
 
     public void assignLeader(Student student) {
-        this.leader = student.name;
+        if (student.klass.number.equals(number)) {
+            this.leader = student.name;
+        } else {
+            System.out.println("It is not one of us.");
+        }
     }
 
-    public String appendMember(Student student) {
+    public void appendMember(Student student) {
         assignLeader(student);
-        if ((student.klass.number).equals(number)) {
-            return "";
-        } else {
-            return ("It is not one of us.");
-        }
     }
 
     public boolean isIn(String[] klasses) {
         return (Arrays.asList(klasses).contains(number));
     }
+
+
 }
